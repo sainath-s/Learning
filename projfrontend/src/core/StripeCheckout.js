@@ -66,7 +66,7 @@ const StripeCheckouts = ({products,setReload = f=>f , reload=undefined}) => {
     const showStripeButton = () =>{
         return isAuthenticated() ? (
             <StripeCheckout
-                stripeKey="pk_test_51HD1kEI5PRYYO9mPtPtZGHNDlBlCUEaUgRg3ltPzijJHdqgs8LvJfO3fFidoq2VU6eru2f34BeyiXIWBVpVg0cvE00qAPJ9k3u"
+                stripeKey="pk_test_key"
                 token={makePayment}
                 amount={getFinalAmount() * 100}
                 name="Buy Tshirt"
